@@ -16,6 +16,12 @@
         { "name" : "RealismOverhaul" },
         { "name" : "Toolbar" }
     ],
+    "conflicts" : [
+        { "name" : "RemoteTech-Config-Stock" }
+    ],
+    "suggests" : [
+        { "name" : "RemoteTech-Config-RSS" }
+    ],
     "resources" : {
         "homepage" : "http://forum.kerbalspaceprogram.com/threads/55145"
     },

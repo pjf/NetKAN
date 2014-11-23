@@ -14,12 +14,16 @@
 			"name": "ModuleManager",
 			"min_version": "2.3.1",
 			"comment": "Earlier versions of MM have forward compatibility problems, according to the MM release notes."
-		}
+		},
+                {
+                        "name" : "RemoteTech-Config"
+                }
 	],
 	"install": [
 		{
 			"file": "GameData/RemoteTech",
-			"install_to": "GameData"
+			"install_to": "GameData",
+                        "filter" : "RemoteTech_Settings.cfg"
 		}
 	],
 	"name": "RemoteTech",

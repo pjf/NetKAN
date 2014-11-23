@@ -1,0 +1,25 @@
+{
+    "spec_version"   : 1,
+    "identifier"     : "RemoteTech-Config-Stock",
+    "name"           : "RemoteTech Config - Stock",
+    "$kref"          : "#/ckan/kerbalstuff/134",
+    "license"        : "restricted",
+    "author"         : "Remote Technologies Group",
+    "release_status" : "stable",
+    "resources": {
+        "repository" : "https://github.com/RemoteTechnologiesGroup/RemoteTech",
+        "bugtracker" : "https://github.com/RemoteTechnologiesGroup/RemoteTech/issues",
+        "manual"     : "http://remotetechnologiesgroup.github.io/RemoteTech/"
+    },
+    "depends"   : [ { "name" : "RemoteTech" } ],
+    "provides"  : [ "RemoteTech-Config" ],
+    "conflicts" : [ { "name" : "RemoteTech-Config" } ],
+    "install": [
+        {
+            "file"          : "GameData/RemoteTech",
+            "install_to"    : "GameData",
+            "comment"       : "This installs only the settings file",
+            "filter_retexp" : "^(?!GameData/RemoteTech/RemoteTech_Settings.cfg)"
+        }
+    ]
+}
