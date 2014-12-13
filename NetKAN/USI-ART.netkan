@@ -36,7 +36,7 @@
     "install" : [
         {
             "file"       : "GameData/ART",
-            "install_to" : "GameData"
+            "install_to" : "GameDota"
         }
     ]
 }
