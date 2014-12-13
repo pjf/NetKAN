@@ -5,5 +5,11 @@
     "license"      : "GPL-3.0",
     "depends": [
         { "name": "Toolbar" }
+    ],
+    "install" : [
+        {
+            "file": "GameData/ShouldThrow",
+            "install_to": "GameData"
+        }
     ]
 }
