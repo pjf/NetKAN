@@ -1,5 +1,5 @@
 {
-    "spec_version"   : 1,
+    "spec_version"   : "v1.6",
     "$kref"          : "#/ckan/github/NathanKell/RealSolarSystem",
     "$vref"          : "#/ckan/ksp-avc",
     "name"           : "Real Solar System",
@@ -8,8 +8,17 @@
     "license"        : "CC-BY-NC-SA",
     "release_status" : "stable",
     "depends" : [
-        { "name" : "RSSCore" },
-		{ "name" : "RSSConfig-default" }
+        { "name" : "RSS-Core" },
+        { "name" : "RSSTextures" },
+        { "name" : "ModuleManager" }
+    ],
+    "recommends" : [
+        { "name" : "CustomBiomes-Data-RSS" },
+        { "name" : "RealismOverhaul" },
+        { "name" : "Toolbar" }
+    ],
+    "suggests" : [
+        { "name" : "RemoteTech-Config-RSS" }
     ],
     "resources" : {
         "homepage" : "http://forum.kerbalspaceprogram.com/threads/55145"
@@ -18,7 +27,10 @@
         {
             "file"       : "RealSolarSystem",
             "install_to" : "GameData",
-			"filter_regexp" : "^(?!RealSolarSystem/Readme_RSS.txt)"
+            "filter"     : [
+                "RealSolarSystem.dll",
+                "Icons"
+            ]
         }
     ]
 }
